@@ -1,0 +1,32 @@
+{
+    "compilerOptions": {
+      "target": "ES2022",
+      "module": "CommonJS",
+  
+      /* Rigor y calidad */
+      "strict": true,
+      "noImplicitReturns": true,
+      "noUnusedLocals": true,
+      "noUnusedParameters": true,
+  
+      /* Resolución de módulos */
+      "moduleResolution": "Node",
+      "esModuleInterop": true,
+      "allowSyntheticDefaultImports": true,
+      "forceConsistentCasingInFileNames": true,
+  
+      /* Soporte para JSON y tipos de Node/Playwright */
+      "resolveJsonModule": true,
+      "types": ["@types/node", "@playwright/test"],
+  
+      /* Mapas de fuente y salida en memoria (Playwright transpila al vuelo) */
+      "inlineSourceMap": true,
+      "inlineSources": true
+    },
+  
+    "include": [
+      "playwright.config.ts",
+      "src/**/*.ts"
+    ]
+  }
+  
