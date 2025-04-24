@@ -13,7 +13,7 @@ test.describe('Transfer feature', () => {
     await reg.fillForm(user);
     await reg.submit();
     await page.getByRole('link', { name: 'Transfer Funds' }).click();
-    await page.locator('#amount').fill('233');
+    await page.locator('#amount').fill('100');
     await page.getByRole('button', { name: 'Transfer' }).click();
 
   });

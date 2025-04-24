@@ -16,7 +16,6 @@ export function buildUser(): RegistrationData {
   };
 }
 
-/* NUEVO → datos aleatorios para Update Profile */
 export function buildNewProfile() {
   return {
     firstName:  faker.person.firstName(),
