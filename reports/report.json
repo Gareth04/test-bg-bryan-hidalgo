@@ -1,7 +1,7 @@
 {
   "config": {
-    "configFile": "C:\\Users\\steve\\Documents\\Curso\\PlayWrigth (test automation)\\test-bg-bryan-hidalgo\\playwright.config.ts",
-    "rootDir": "C:/Users/steve/Documents/Curso/PlayWrigth (test automation)/test-bg-bryan-hidalgo/src/specs",
+    "configFile": "C:\\Users\\steve\\Documents\\GitHub\\test-bg-bryan-hidalgo\\playwright.config.ts",
+    "rootDir": "C:/Users/steve/Documents/GitHub/test-bg-bryan-hidalgo/src/specs",
     "forbidOnly": false,
     "fullyParallel": false,
     "globalSetup": null,
@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 1
+      "actualWorkers": 4
     },
     "preserveOutput": "always",
     "reporter": [
@@ -40,15 +40,15 @@
     "quiet": false,
     "projects": [
       {
-        "outputDir": "C:/Users/steve/Documents/Curso/PlayWrigth (test automation)/test-bg-bryan-hidalgo/test-results",
+        "outputDir": "C:/Users/steve/Documents/GitHub/test-bg-bryan-hidalgo/test-results",
         "repeatEach": 1,
         "retries": 1,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 4
         },
         "id": "Chromium",
         "name": "Chromium",
-        "testDir": "C:/Users/steve/Documents/Curso/PlayWrigth (test automation)/test-bg-bryan-hidalgo/src/specs",
+        "testDir": "C:/Users/steve/Documents/GitHub/test-bg-bryan-hidalgo/src/specs",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -64,6 +64,57 @@
     "webServer": null
   },
   "suites": [
+    {
+      "title": "login.spec.ts",
+      "file": "login.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Login feature",
+          "file": "login.spec.ts",
+          "line": 7,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Login after user has been created",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 35000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Chromium",
+                  "projectName": "Chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 6206,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-04-24T19:21:48.039Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "41d3fd2474a19feb00a1-6f2ee4bd15675f1b19ea",
+              "file": "login.spec.ts",
+              "line": 8,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
     {
       "title": "registration.spec.ts",
       "file": "registration.spec.ts",
@@ -90,15 +141,15 @@
                   "projectName": "Chromium",
                   "results": [
                     {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 3263,
+                      "duration": 4570,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-04-24T13:54:11.859Z",
+                      "startTime": "2025-04-24T19:21:48.041Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -114,13 +165,115 @@
           ]
         }
       ]
+    },
+    {
+      "title": "transfer.spec.ts",
+      "file": "transfer.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Transfer feature",
+          "file": "transfer.spec.ts",
+          "line": 6,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Transfer funds after registration",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 35000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Chromium",
+                  "projectName": "Chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 4904,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-04-24T19:21:48.044Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "7ebe0bf4403ea664f493-6f9cecc31f9bc3eed0e5",
+              "file": "transfer.spec.ts",
+              "line": 7,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "updateprofile.spec.ts",
+      "file": "updateprofile.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Update Profile feature",
+          "file": "updateprofile.spec.ts",
+          "line": 7,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Update all personal data with random values",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 35000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Chromium",
+                  "projectName": "Chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 4965,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-04-24T19:21:48.052Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a882b3f6486308b6e9e5-78f72ed5ca1ef99684de",
+              "file": "updateprofile.spec.ts",
+              "line": 8,
+              "column": 7
+            }
+          ]
+        }
+      ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-04-24T13:54:10.962Z",
-    "duration": 4479.657,
-    "expected": 1,
+    "startTime": "2025-04-24T19:21:46.950Z",
+    "duration": 7836.9580000000005,
+    "expected": 4,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0
